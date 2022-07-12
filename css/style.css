@@ -644,10 +644,12 @@ body {
 }
 
 .photo-action {
+  width: 322px;
+  height: 168px;
   position: absolute;
-  bottom: 0;
-  /* left: 50%;
-  transform: translate(-50%, -50%); */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
 
