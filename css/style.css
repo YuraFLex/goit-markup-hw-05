@@ -297,6 +297,49 @@ body {
   padding: 0 15px;
 }
 
+.work-thumb {
+  position: relative;
+}
+
+.work-thumb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  opacity: 0;
+}
+
+.work-action {
+  color: var(--white-text-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  opacity: 0;
+}
+
+.work-thumb:hover::before {
+  opacity: 1;
+}
+
+.work-thumb:hover .work-action {
+  opacity: 1;
+}
+
+.work-action-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  margin: 0;
+  padding-bottom: 25px;
+  padding-left: 80px;
+}
+
 /* -------------------- Command --------------------*/
 
 .command-bg {
