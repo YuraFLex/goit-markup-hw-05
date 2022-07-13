@@ -21,6 +21,7 @@ html {
 }
 
 /* Стили для обнуления верхних отступов у элементов */
+
 h1,
 h2,
 h3,
@@ -60,20 +61,38 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+
 .no-pb {
   padding-bottom: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* -------------------- Header -------------------- */
+
 .header {
   border-bottom: 1px solid var(--border-header-color);
 }
+
 .head {
   display: flex;
   align-items: center;
   margin: 0 auto;
 }
 
-/* -------------------- Logo Company -------------------- */
+/* -------------------- Header Logo Company -------------------- */
+
 .web {
   font-family: "Raleway";
   font-size: 26px;
@@ -99,24 +118,28 @@ body {
   margin: 0;
 }
 
-/* -------------------- Navigation -------------------- */
+/* -------------------- Header Navigation -------------------- */
 
 .nav {
   display: flex;
   align-items: center;
 }
+
 .nav > a {
   margin-right: 93px;
 }
+
 .nav-list {
   display: flex;
 }
+
 .nav .nav-link {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
+
 .nav-menu + .nav-menu {
   margin-left: 50px;
 }
@@ -135,7 +158,8 @@ body {
 .nav .active-page {
   color: var(--acent-color);
 }
-/* -------------------- Contact -------------------- */
+
+/* -------------------- Header Contact -------------------- */
 
 .contact-list {
   display: flex;
@@ -145,6 +169,7 @@ body {
 .contact-menu {
   margin-right: 50px;
 }
+
 .contact-menu:last-child {
   margin-right: 0;
 }
@@ -227,21 +252,8 @@ body {
   background: var(--prinmary-bg-color);
   color: var(--acent-color);
 }
+
 /* -------------------- Privileg -------------------- */
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 .privileg-list {
   display: flex;
@@ -261,10 +273,12 @@ body {
   border-radius: 4px;
   margin-bottom: 30px;
 }
+
 .priveleg-icon {
   height: 70px;
   width: 70px;
 }
+
 .privileg-subtitle {
   margin-bottom: 10px;
   font-size: 14px;
@@ -363,6 +377,7 @@ body {
 .command-item:last-child {
   margin-right: 0;
 }
+
 .command-name {
   padding-top: 30px;
   margin-bottom: 10px;
@@ -379,10 +394,12 @@ body {
   color: var(--second-text-color);
   margin-bottom: 16px;
 }
+
 .client-list {
   display: flex;
   margin-left: 10px;
 }
+
 .client {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -400,6 +417,7 @@ body {
 .command-footer {
   margin: 30px 0;
 }
+
 .command-social-list {
   display: flex;
   justify-content: center;
@@ -427,6 +445,7 @@ body {
   background-color: var(--acent-color);
   fill: var(--white-text-color);
 }
+
 .icon-social {
   width: 20px;
   height: 20px;
@@ -478,6 +497,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-content {
   display: flex;
 }
@@ -503,6 +523,7 @@ body {
 .footer-address {
   margin-bottom: 9px;
 }
+
 .footer-address > a {
   font-style: normal;
   text-decoration: none;
@@ -529,6 +550,7 @@ body {
   padding-top: 12px;
   color: var(--white-text-color);
 }
+
 .footer-social {
   margin-left: 70px;
 }
@@ -547,6 +569,7 @@ body {
 .footer-social-network:not(:first-child) {
   margin-left: 10px;
 }
+
 .footer-social-link {
   display: inline-flex;
   padding: 12px;
