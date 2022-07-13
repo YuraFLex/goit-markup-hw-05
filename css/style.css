@@ -353,10 +353,6 @@ body {
   opacity: 1;
 }
 
-.work-thumb:hover .work-action {
-  opacity: 1;
-}
-
 .work-action-text {
   font-weight: 700;
   font-size: 14px;
@@ -616,6 +612,7 @@ body {
   line-height: 1.62;
   border: none;
   cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-btn:hover,
@@ -663,35 +660,26 @@ body {
 
 .photo-thumb {
   position: relative;
-}
-
-.photo-thumb::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 150, 243, 0.9);
-  opacity: 0;
-}
-
-.photo-thumb:hover::before {
-  opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .photo-action {
-  width: 322px;
-  height: 168px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background: rgba(33, 150, 243, 0.9);
   opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-thumb:hover .photo-action {
+  transform: translate(0);
   opacity: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .photo-action-text {
