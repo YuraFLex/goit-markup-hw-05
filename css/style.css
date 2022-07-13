@@ -725,14 +725,12 @@ body {
 /* -------------------- Модалка -------------------- */
 
 .back-drop {
-  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -743,8 +741,6 @@ body {
 
 .back-drop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.2);
-  opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
