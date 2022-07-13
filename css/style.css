@@ -601,13 +601,13 @@ body {
 .menu-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-top: 50px;
 }
 
 .photo-item {
