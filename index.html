@@ -70,7 +70,9 @@
 
       <section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <button class="hero-btn" type="button" data-modal-open>
+          Заказать услугу
+        </button>
       </section>
 
       <!-- Privileg (Приимущества) -->
@@ -595,5 +597,19 @@
         </ul>
       </div>
     </footer>
+
+    <!-- Модалка -->
+
+    <div class="back-drop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="btn-modal">
+          <span>
+            <img src="./img/modal/close.svg" alt="close button" />
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/model.js"></script>
   </body>
 </html>
