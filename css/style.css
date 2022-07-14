@@ -745,7 +745,7 @@ body {
 }
 
 .back-drop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(0.5);
 }
 
 .modal {
