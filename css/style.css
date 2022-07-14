@@ -141,7 +141,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-menu {
+.nav-menu + .nav-menu {
   margin-left: 50px;
   position: relative;
 }
@@ -159,6 +159,7 @@ body {
 
 .nav .active-page {
   color: var(--acent-color);
+  position: relative;
 }
 
 .active-page::after {
@@ -248,17 +249,17 @@ body {
 
 .hero-btn {
   font-family: inherit;
-  background-color: var(--acent-color);
+  height: 50px;
   min-width: 200px;
   padding: 10px 32px;
-  height: 50px;
-  border: 1px solid var(--acent-color);
-  border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8px;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
+  border: 1px solid var(--acent-color);
+  border-radius: 4px;
+  background-color: var(--acent-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -731,13 +732,14 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .back-drop.is-hidden .modal {
