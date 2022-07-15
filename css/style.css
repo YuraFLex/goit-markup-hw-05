@@ -780,3 +780,7 @@ body {
   height: 18px;
   fill: var(--primary-text-color);
 }
+
+.btn-modal:hover .btn-modal-icon {
+  fill: var(--acent-color);
+}
